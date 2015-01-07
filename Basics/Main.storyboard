@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h8-Kf-sLf" customClass="PrettyButton">
+                                <rect key="frame" x="255" y="39" width="92" height="42"/>
+                                <color key="backgroundColor" red="0.079934028401443022" green="0.80640388257575757" blue="0.0003421234246985264" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="myClearButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bAE-4e-yl3"/>
+                                    <action selector="myLogingButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oKY-7a-3Lp"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-BX-9eO">
+                                <rect key="frame" x="16" y="105" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Oce-FK-erf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zkf-fR-dqh">
+                                <rect key="frame" x="16" y="181" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8dS-W9-iJf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oE7-64-zt9">
+                                <rect key="frame" x="16" y="143" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGM-EN-teS" customClass="PrettyButton">
+                                <rect key="frame" x="255" y="241" width="90" height="48"/>
+                                <color key="backgroundColor" red="0.89804292929292928" green="0.20034282642208587" blue="0.23366031590801117" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="myClearButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3ZZ-2f-qts"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suN-Gb-mQL">
+                                <rect key="frame" x="264" y="503" width="72" height="30"/>
+                                <state key="normal" title="Next Page">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QAo-ou-BLB" kind="show" id="ecA-sj-95O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EPf-BX-9eO" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="2Y5-jK-A8W"/>
+                            <constraint firstItem="oE7-64-zt9" firstAttribute="top" secondItem="EPf-BX-9eO" secondAttribute="bottom" constant="8" id="Kvz-Sz-oBD"/>
+                            <constraint firstItem="eGM-EN-teS" firstAttribute="top" secondItem="Zkf-fR-dqh" secondAttribute="bottom" constant="20" id="L8e-Bb-2A0"/>
+                            <constraint firstItem="Zkf-fR-dqh" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="RfX-vc-kZT"/>
+                            <constraint firstItem="EPf-BX-9eO" firstAttribute="top" secondItem="6h8-Kf-sLf" secondAttribute="bottom" constant="20" id="atn-K6-WyH"/>
+                            <constraint firstItem="oE7-64-zt9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="d5v-Lt-Ual"/>
+                            <constraint firstItem="Zkf-fR-dqh" firstAttribute="top" secondItem="oE7-64-zt9" secondAttribute="bottom" constant="8" id="ghS-tV-LCc"/>
+                            <constraint firstItem="oE7-64-zt9" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="klX-0J-5gR"/>
+                            <constraint firstItem="Zkf-fR-dqh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="whF-fw-GZQ"/>
+                            <constraint firstItem="EPf-BX-9eO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="y3y-fu-gvd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MyClearButton" destination="eGM-EN-teS" id="Iua-pl-S7t"/>
+                        <outlet property="MyLogingButton" destination="6h8-Kf-sLf" id="yzw-jt-pzn"/>
+                        <outlet property="myEmailTextField" destination="oE7-64-zt9" id="KIK-9D-cjh"/>
+                        <outlet property="myPasswordTextField" destination="Zkf-fR-dqh" id="oTa-1a-6HQ"/>
+                        <outlet property="myUserNameTextField" destination="EPf-BX-9eO" id="CsC-xT-qGI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="336"/>
+        </scene>
+        <!--View Controller2 View Controller-->
+        <scene sceneID="VkV-7A-qZ3">
+            <objects>
+                <viewController id="QAo-ou-BLB" customClass="ViewController2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Sv-a2-KQy"/>
+                        <viewControllerLayoutGuide type="bottom" id="KVy-7u-O9S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cmJ-38-Uai">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6de-3Z-b82" customClass="PrettyButton">
+                                <rect key="frame" x="25" y="20" width="55" height="55"/>
+                                <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Button1:" destination="QAo-ou-BLB" eventType="touchUpInside" id="xxn-oB-tI0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmH-kx-TOy" customClass="PrettyButton">
+                                <rect key="frame" x="25" y="118" width="55" height="55"/>
+                                <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Button2:" destination="QAo-ou-BLB" eventType="touchUpInside" id="L7K-8I-Jn9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxW-Zg-3ZE" customClass="PrettyButton">
+                                <rect key="frame" x="25" y="219" width="55" height="55"/>
+                                <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Button3:" destination="QAo-ou-BLB" eventType="touchUpInside" id="Unc-uq-8l9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tM-5g-01t" customClass="PrettyButton">
+                                <rect key="frame" x="25" y="327" width="55" height="55"/>
+                                <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Button4:" destination="QAo-ou-BLB" eventType="touchUpInside" id="Mug-Ch-EeY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79018702651515149" green="0.79018702651515149" blue="0.79018702651515149" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYn-gO-1Qx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="352"/>
+        </scene>
+    </scenes>
+</document>
