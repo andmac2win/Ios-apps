@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FriendCell.h
 //  GithubFriends
 //
 //  Created by andrew Mcdonald on 1/8/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FriendCell : UITableViewCell
 
 @end
-
